@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "ce7eb2b2-edc3-4a20-9d4d-ecfbb8ed05ea",
+		"name": "PruebaSpring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allvehicletype",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking/allvehicletype",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"allvehicletype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerVehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"licenseNumber\": \"123456\",\r\n  \"vehicleTypeId\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/registerVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"registerVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerParking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"licenseNumber\": \"123456\",\r\n  \"vehicleTypeId\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/registerVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"registerVehicle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
